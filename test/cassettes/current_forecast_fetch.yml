@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/currentconditions/v1/3697_PC?apikey=tGq9XKAciz0G0TbG0Ij6AahL6FSZzDbD&details=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Dec 2022 09:02:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4070'
+      Connection:
+      - keep-alive
+      Server:
+      - Microsoft-IIS/10.0
+      Ratelimit-Limit:
+      - '50000'
+      Ratelimit-Remaining:
+      - '49994'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=386
+      Expires:
+      - Sun, 11 Dec 2022 09:08:42 GMT
+      Akamai-Grn:
+      - 0.d768dc17.1670749335.86d3df7d
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 104.28.126.145
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2022-12-11T03:54:00-05:00","EpochTime":1670748840,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":2.6,"Unit":"C","UnitType":17},"Imperial":{"Value":37.0,"Unit":"F","UnitType":18}},"RealFeelTemperature":{"Metric":{"Value":3.0,"Unit":"C","UnitType":17,"Phrase":"Cold"},"Imperial":{"Value":37.0,"Unit":"F","UnitType":18,"Phrase":"Cold"}},"RealFeelTemperatureShade":{"Metric":{"Value":3.0,"Unit":"C","UnitType":17,"Phrase":"Cold"},"Imperial":{"Value":37.0,"Unit":"F","UnitType":18,"Phrase":"Cold"}},"RelativeHumidity":82,"IndoorRelativeHumidity":40,"DewPoint":{"Metric":{"Value":-0.2,"Unit":"C","UnitType":17},"Imperial":{"Value":32.0,"Unit":"F","UnitType":18}},"Wind":{"Direction":{"Degrees":45,"Localized":"NE","English":"NE"},"Speed":{"Metric":{"Value":5.4,"Unit":"km/h","UnitType":7},"Imperial":{"Value":3.3,"Unit":"mi/h","UnitType":9}}},"WindGust":{"Speed":{"Metric":{"Value":12.7,"Unit":"km/h","UnitType":7},"Imperial":{"Value":7.9,"Unit":"mi/h","UnitType":9}}},"UVIndex":0,"UVIndexText":"Low","Visibility":{"Metric":{"Value":20.9,"Unit":"km","UnitType":6},"Imperial":{"Value":13.0,"Unit":"mi","UnitType":2}},"ObstructionsToVisibility":"","CloudCover":98,"Ceiling":{"Metric":{"Value":975.0,"Unit":"m","UnitType":5},"Imperial":{"Value":3200.0,"Unit":"ft","UnitType":0}},"Pressure":{"Metric":{"Value":1027.2,"Unit":"mb","UnitType":14},"Imperial":{"Value":30.33,"Unit":"inHg","UnitType":12}},"PressureTendency":{"LocalizedText":"Falling","Code":"F"},"Past24HourTemperatureDeparture":{"Metric":{"Value":2.4,"Unit":"C","UnitType":17},"Imperial":{"Value":4.0,"Unit":"F","UnitType":18}},"ApparentTemperature":{"Metric":{"Value":2.8,"Unit":"C","UnitType":17},"Imperial":{"Value":37.0,"Unit":"F","UnitType":18}},"WindChillTemperature":{"Metric":{"Value":1.7,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"WetBulbTemperature":{"Metric":{"Value":1.5,"Unit":"C","UnitType":17},"Imperial":{"Value":35.0,"Unit":"F","UnitType":18}},"Precip1hr":{"Metric":{"Value":0.0,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.0,"Unit":"in","UnitType":1}},"PrecipitationSummary":{"Precipitation":{"Metric":{"Value":0.0,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.0,"Unit":"in","UnitType":1}},"PastHour":{"Metric":{"Value":0.0,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.0,"Unit":"in","UnitType":1}},"Past3Hours":{"Metric":{"Value":0.2,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.01,"Unit":"in","UnitType":1}},"Past6Hours":{"Metric":{"Value":0.2,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.01,"Unit":"in","UnitType":1}},"Past9Hours":{"Metric":{"Value":0.2,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.01,"Unit":"in","UnitType":1}},"Past12Hours":{"Metric":{"Value":0.2,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.01,"Unit":"in","UnitType":1}},"Past18Hours":{"Metric":{"Value":0.2,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.01,"Unit":"in","UnitType":1}},"Past24Hours":{"Metric":{"Value":0.2,"Unit":"mm","UnitType":3},"Imperial":{"Value":0.01,"Unit":"in","UnitType":1}}},"TemperatureSummary":{"Past6HourRange":{"Minimum":{"Metric":{"Value":2.6,"Unit":"C","UnitType":17},"Imperial":{"Value":37.0,"Unit":"F","UnitType":18}},"Maximum":{"Metric":{"Value":3.5,"Unit":"C","UnitType":17},"Imperial":{"Value":38.0,"Unit":"F","UnitType":18}}},"Past12HourRange":{"Minimum":{"Metric":{"Value":2.6,"Unit":"C","UnitType":17},"Imperial":{"Value":37.0,"Unit":"F","UnitType":18}},"Maximum":{"Metric":{"Value":4.9,"Unit":"C","UnitType":17},"Imperial":{"Value":41.0,"Unit":"F","UnitType":18}}},"Past24HourRange":{"Minimum":{"Metric":{"Value":-0.4,"Unit":"C","UnitType":17},"Imperial":{"Value":31.0,"Unit":"F","UnitType":18}},"Maximum":{"Metric":{"Value":5.1,"Unit":"C","UnitType":17},"Imperial":{"Value":41.0,"Unit":"F","UnitType":18}}}},"MobileLink":"http://www.accuweather.com/en/us/new-york-ny/10007/current-weather/3697_pc?lang=en-us","Link":"http://www.accuweather.com/en/us/new-york-ny/10007/current-weather/3697_pc?lang=en-us"}]'
+  recorded_at: Sun, 11 Dec 2022 09:02:16 GMT
+recorded_with: VCR 6.1.0
